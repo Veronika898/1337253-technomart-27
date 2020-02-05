@@ -67,8 +67,8 @@
             <h1>Перфораторы:</h1>
             <!--здесь должен быть фильтр производители/питание-->
             <aside>
-                <p>Фильтр:</p>
-                
+            <p>Фильтр:</p>
+            <form method="get" action="#">
                 <div>
                     <h2>Цена:</h2>
                     <input type="range">
@@ -76,30 +76,92 @@
                     <input type="number">
                 </div>
                 
-                <div>
-                    <h2>Производители:</h2>
-                    <span>Фильтр по производителям</span>
-                </div>
-
-                <div>
-                    <h2>Питание:</h2>
-                    <span>Фильтр по питанию</span>
-                </div>
-
-                <button type="button">Показать</button>
                 
-                <div>
-                <p>Сортировка:</p>
-                   <div>
-                        <ul>
-                            <li>По цене</li>
-                            <li>По типу</li>
-                            <li>По функционалу</li>
-                        </ul>
-                       <span>Стрелочки вверх</span>
-                       <span>Стрелочки вниз</span>
-                    </div>
-                </div>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                            <label for="filter-bosch">
+                            BOSCH
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interskol" id="filter-interskol">
+                            <label for="filter-interskol">
+                            ИНТЕРСКОЛ
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="makita" id="filter-makita" checked>
+                            <label for="filter-makita">
+                            MAKITA
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="dewalt" id="filter-dewalt">
+                            <label for="filter-dewalt">
+                            DEWALT
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="hitachi" id="filter-hitachi">
+                            <label for="filter-hitachi">
+                            HITACHI
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Питание" value="Аккумуляторные" id="filter-akum" checked>
+                            <label for="filter-akum">
+                            АККУМУЛЯТОРНЫЕ
+                            </label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" name="Питание" value="Сетевые" id="filter-set">
+                            <label for="filter-set">
+                            СЕТЕВЫЕ
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="сортировка" value="price" id="filter-price" checked>
+                            <label for="filter-price">
+                                ПО ЦЕНЕ
+                            </label>
+                        </li>
+                        
+                        <li><input type="radio" name="сортировка" value="type" id="filter-type">
+                            <label for="filter-type">
+                                ПО ТИПУ
+                            </label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" name="сортировка" value="function" id="filter-function">
+                            <label for="filter-function">
+                                ПО ФУНКЦИОНАЛУ
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+               
+                <span>Стрелочки вверх</span>
+                <span>Стрелочки вниз</span>
+                
+            <button type="submit">Показать</button>
+            </form>
             </aside>
             
             <div class="catalog_item">
@@ -121,6 +183,7 @@
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
                   <p>12500 Р.</p>
+                  <img src="img/new-flag.png" alt="Иконка NEW">
                 </div>
                 <!--Если не наводить на перфоратор, то это выглядит так, иначе - две кнопки вместо картинки:)))-->
                 <div>
@@ -186,7 +249,7 @@
             </p>
             <p>
               Разработано - <br>
-              <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </section>
       </footer>
