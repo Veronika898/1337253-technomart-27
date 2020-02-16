@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
+       <header class="head">
           
-        <section>
-          <a href="#"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт"></a>
-    
+        <section class="top_section">
+          <a class="logo" href="#"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт"></a>
+            
           <p>Поиск</p>
           <input type="text">
                 
@@ -17,37 +21,37 @@
             <li><a href="#">Закладки</a></li>
             <li><a href="#">Корзина</a></li>
           </ul>
-          <a href="#">Оформить заказ</a>
+          <a class="button_buy" href="#">Оформить заказ</a>
         </section>
          
         <section> 
-            <p>
-              Интренет-магазин<br>
+            <p class="text">
+              Интернет-магазин<br>
               строительных материалов<br>
               и инструментов для ремонта
             </p>
 
-            <p>
-              +7(812)555-05-55<br>
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </p>
+            <div>
+            <div class="phone">+7(812)555-05-55<br></div>
+            <div class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+            </div>
 
             <div>
-              <a href="#">Войти</a>
-              <a href="#">Регистрация</a>
+              <a class="button_login" href="#">Войти</a>
+              <a class="button_login" href="#">Регистрация</a>
             </div>
         </section>
              
         <section>
           <nav>
-            <ul>
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="catalog.html">Каталоги</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+            <ul class="navigation">
+              <li class="nav_item"><a href="index.html">Главная</a></li>
+              <li class="nav_item"><a href="#">Компания</a></li>
+              <li class="nav_item"><a href="catalog.html">Каталог</a></li>
+              <li class="nav_item"><a href="#">Новости</a></li>
+              <li class="nav_item"><a href="#">Спецпредложения</a></li>
+              <li class="nav_item"><a href="#">Доставка</a></li>
+              <li class="nav_item"><a href="#">Контакты</a></li>
             </ul>
           </nav>
         </section>
@@ -56,7 +60,7 @@
       
       <main>          
         <div>
-            <ul>
+            <ul class="catalog_list">
               <li><a href="#">Каталог</a></li>
               <li><a href="#">Инструмент</a></li>  
               <li><a href="#">Перфораторы</a></li>  
@@ -64,7 +68,7 @@
         </div>
           
         <div>
-            <h1>Перфораторы:</h1>
+            <h1 class="title_1">Перфораторы:</h1>
             <aside>
             <p>Фильтр:</p>
             <form method="get" action="#">
@@ -77,8 +81,8 @@
                 
                 
                 <fieldset>
-                    <legend>Производители:</legend>
-                    <ul>
+                    <legend class="filter_title">Производители:</legend>
+                    <ul class="filter_item">
                         <li>
                             <input type="checkbox" name="bosch" id="filter-bosch" checked>
                             <label for="filter-bosch">
@@ -113,8 +117,8 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Питание:</legend>
-                    <ul>
+                    <legend class="filter_title">Питание:</legend>
+                    <ul class="filter_item">
                         <li>
                             <input type="radio" name="Питание" value="Аккумуляторные" id="filter-akum" checked>
                             <label for="filter-akum">
@@ -159,7 +163,7 @@
                 <span>Стрелочки вверх</span>
                 <span>Стрелочки вниз</span>
                 
-            <button type="submit">Показать</button>
+            <button class="button_show" type="submit">Показать</button>
             </form>
             </aside>
             
@@ -167,22 +171,64 @@
                 <div class="item">
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <a><img src="/img/item3000.jpg" alt="перфоратор BOSCH1"></a>
-                  <p><del>22500 Р.</del></p>
-                  <p>15500 Р.</p>
+                  <p class="price"><del>22500 Р.</del></p>
+                  <p class="price_new">15500 Р.</p>
                 </div>
 
                 <div class="item">
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <a><img src="/img/item6000.jpg" alt="перфоратор BOSCH2"></a>
-                  <p><del>30500 Р.</del></p>
-                  <p>25500 Р.</p>
+                  <p class="price"><del>30500 Р.</del></p>
+                  <p class="price_new">25500 Р.</p>
                 </div>
 
                 <div class="item">
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
-                  <p>12500 Р.</p>
+                  <p class="price_new">12500 Р.</p>
                   <span>new</span>
+                </div>
+                
+                <div class="item">
+                  <h3>Перфоратор BOSCH BFG 3000</h3>
+                  <a><img src="/img/item3000.jpg" alt="перфоратор BOSCH1"></a>
+                  <p class="price"><del>22500 Р.</del></p>
+                  <p class="price_new">15500 Р.</p>
+                </div>
+
+                <div class="item">
+                  <h3>Перфоратор BOSCH BFG 6000</h3>
+                  <a><img src="/img/item6000.jpg" alt="перфоратор BOSCH2"></a>
+                  <p class="price"><del>30500 Р.</del></p>
+                  <p class="price_new">25500 Р.</p>
+                  <span>new</span>
+                </div>
+
+                <div class="item">
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
+                  <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
+                  <p class="price_new">12500 Р.</p>
+                </div>
+                
+                <div class="item">
+                  <h3>Перфоратор BOSCH BFG 3000</h3>
+                  <a><img src="/img/item3000.jpg" alt="перфоратор BOSCH1"></a>
+                  <p class="price"><del>22500 Р.</del></p>
+                  <p class="price_new">15500 Р.</p>
+                  <span>new</span>
+                </div>
+
+                <div class="item">
+                  <h3>Перфоратор BOSCH BFG 6000</h3>
+                  <a><img src="/img/item6000.jpg" alt="перфоратор BOSCH2"></a>
+                  <p class="price"><del>30500 Р.</del></p>
+                  <p class="price_new">25500 Р.</p>
+                </div>
+
+                <div class="item">
+                  <h3>Перфоратор BOSCH BFG 2000</h3>
+                  <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
+                  <p class="price_new">12500 Р.</p>
                 </div>
                 <!--Если не наводить на перфоратор, то это выглядит так, иначе - две кнопки вместо картинки:)))-->
                 <div>
@@ -203,7 +249,7 @@
             ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </article>
           
-        <div>
+        <div class="form">
           <div><img src="img/modal-check.svg" alt="Иконка галочка"></div>
           <div><p>Товар добавлен в корзину!</p></div>
           <div><a href="#">Оформить заказ</a></div>
@@ -212,10 +258,10 @@
         </div>
       </main>
       
-      <footer>
+      <footer class="foot">
         <section>
-             <a href="index.html"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт"></a>
-            <ul>
+             <a class="logo" href="index.html"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт"></a>
+            <ul class="footer_navigation_1">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="catalog.html">Каталог</a></li>
@@ -225,12 +271,12 @@
         </section>
           
         <section>
-            <p>
+            <p class="footer_contacts">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7(812)555-05-55
             </p>
 
-            <ul>
+            <ul class="footer_navigation_2">
               <li><a href="#">Материалы</a></li>
               <li><a href="#">Техника</a></li>
               <li><a href="#">Инструмент</a></li>
@@ -238,26 +284,26 @@
             </ul>
         </section>
         
-        <section>
-            <p>
+        <section class="bottom_section">
+            <p class="copyright">
               ©2010-2017 Компания "Техномарт"<br>
               Все права защищены
             </p>
             <div>
-              <ul>
+              <ul class="social">
                 <li><a href="#">Вконтакте</a></li>   
                 <li><a href="#">Фейсбук</a></li>   
                 <li><a href="#">Инстаграмм</a></li>   
               </ul>
             </div>
-            <p>
-              Обратная связь:<br>
-              mail@htmlacademy.ru
-            </p>
-            <p>
-              Разработано - <br>
-              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </p>
+            <div>
+              <div class="dop_info">Обратная связь:</div>
+              <div class="dop_info_link">mail@htmlacademy.ru</div>
+            </div>
+            <div>
+             <div class="dop_info">Разработано</div>
+              <a class="dop_info_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </div>
         </section>
       </footer>
   </body>
