@@ -14,12 +14,28 @@
         <section class="top_section">
           <a class="logo" href="#"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт"></a>
             
+            <svg class="icon1" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+            </svg>
+
           <p>Поиск</p>
-          <input type="text">
+          <input class="search" type="text">
                 
           <ul>
-            <li><a href="#">Закладки</a></li>
-            <li><a href="#">Корзина</a></li>
+            <li>
+                <svg class="icon1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+                </svg>
+                <a class="dop_window" href="#">Закладки</a>
+            </li>
+            <li>
+                <svg class="icon1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                <circle cx="4.5" cy="13.5" r="1.5"/>
+                <circle cx="12.5" cy="13.5" r="1.5"/>
+                <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                </svg>
+                <a class="dop_window" href="#">Корзина</a>
+            </li>
           </ul>
           <a class="button_buy" href="#">Оформить заказ</a>
         </section>
@@ -37,6 +53,10 @@
             </div>
 
             <div>
+            <svg class="icon_login" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+            <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+            <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+            </svg>
               <a class="button_login" href="#">Войти</a>
               <a class="button_login" href="#">Регистрация</a>
             </div>
@@ -70,13 +90,13 @@
         <div>
             <h1 class="title_1">Перфораторы:</h1>
             <aside>
-            <p>Фильтр:</p>
+            <p class="filter_background filter_text">Фильтр:</p>
             <form method="get" action="#">
                 <div>
-                    <h2>Цена:</h2>
-                    <input type="range">
-                    <input type="number">
-                    <input type="number">
+                    <h2 class="filter_title">Цена:</h2>
+                    <div class="filter_background"><input type="range"></div>
+                    <input class="filter_background" type="number">
+                    <input class="filter_background" type="number">
                 </div>
                 
                 
@@ -135,9 +155,9 @@
                     </ul>
                 </fieldset>
                 
-                <fieldset>
-                    <legend>Сортировка:</legend>
-                    <ul>
+                <fieldset class="filter_background">
+                    <legend class="filter_text">Сортировка:</legend>
+                    <ul class="filter_item1">
                         <li>
                             <input type="radio" name="сортировка" value="price" id="filter-price" checked>
                             <label for="filter-price">
@@ -158,11 +178,11 @@
                             </label>
                         </li>
                     </ul>
+                    
+                    <span>Стрелочки вверх</span>
+                    <span>Стрелочки вниз</span>
                 </fieldset>
                
-                <span>Стрелочки вверх</span>
-                <span>Стрелочки вниз</span>
-                
             <button class="button_show" type="submit">Показать</button>
             </form>
             </aside>
@@ -172,6 +192,7 @@
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <a><img src="/img/item3000.jpg" alt="перфоратор BOSCH1"></a>
                   <p class="price"><del>22500 Р.</del></p>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">15500 Р.</p>
                 </div>
 
@@ -179,12 +200,14 @@
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <a><img src="/img/item6000.jpg" alt="перфоратор BOSCH2"></a>
                   <p class="price"><del>30500 Р.</del></p>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">25500 Р.</p>
                 </div>
 
                 <div class="item">
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">12500 Р.</p>
                   <span>new</span>
                 </div>
@@ -193,6 +216,7 @@
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <a><img src="/img/item3000.jpg" alt="перфоратор BOSCH1"></a>
                   <p class="price"><del>22500 Р.</del></p>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">15500 Р.</p>
                 </div>
 
@@ -200,6 +224,7 @@
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <a><img src="/img/item6000.jpg" alt="перфоратор BOSCH2"></a>
                   <p class="price"><del>30500 Р.</del></p>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">25500 Р.</p>
                   <span>new</span>
                 </div>
@@ -207,6 +232,7 @@
                 <div class="item">
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">12500 Р.</p>
                 </div>
                 
@@ -214,6 +240,7 @@
                   <h3>Перфоратор BOSCH BFG 3000</h3>
                   <a><img src="/img/item3000.jpg" alt="перфоратор BOSCH1"></a>
                   <p class="price"><del>22500 Р.</del></p>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">15500 Р.</p>
                   <span>new</span>
                 </div>
@@ -222,12 +249,14 @@
                   <h3>Перфоратор BOSCH BFG 6000</h3>
                   <a><img src="/img/item6000.jpg" alt="перфоратор BOSCH2"></a>
                   <p class="price"><del>30500 Р.</del></p>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">25500 Р.</p>
                 </div>
 
                 <div class="item">
                   <h3>Перфоратор BOSCH BFG 2000</h3>
                   <a><img src="/img/item2000.jpg" alt="перфоратор BOSCH3"></a>
+                  <img src="img/item-button.svg" alt="Иконка новой цены">
                   <p class="price_new">12500 Р.</p>
                 </div>
                 <!--Если не наводить на перфоратор, то это выглядит так, иначе - две кнопки вместо картинки:)))-->
@@ -243,8 +272,8 @@
           </div>
           
         <article>
-            <h2>Пара слов о перфораторов</h2>
-            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> 
+            <h2 class="article_title">Пара слов о перфораторов</h2>
+            <p class="article_text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> 
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br> 
             ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </article>
@@ -291,9 +320,9 @@
             </p>
             <div>
               <ul class="social">
-                <li><a href="#">Вконтакте</a></li>   
-                <li><a href="#">Фейсбук</a></li>   
-                <li><a href="#">Инстаграмм</a></li>   
+                <li><a href="#"><img class="social_icon" src="img/vk-icon.svg" alt="Вконтакте"></a></li>
+                <li><a href="#"><img class="social_icon" src="img/fb-icon.svg" alt="Фейсбук"></a></li>   
+                <li><a href="#"><img class="social_icon" src="img/insta-icon.svg" alt="Инстаграм"></a></li>   
               </ul>
             </div>
             <div>
