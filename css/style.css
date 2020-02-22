@@ -5,12 +5,15 @@ a
 
 body
 {
-    padding: 0;
-    margin: 0;
+    width: 1200px;
+    box-sizing: border-box;
     font-family: "Cuprum", sans-serif;
     color: #000000;
     font-size: 16px;
     line-height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .head 
@@ -25,10 +28,12 @@ body
 
 .top_section
 {
-   background-color: #293449;
-   font-size: 17px;
-   color: #ffffff;
-   list-style: none;
+  width: 1200px;
+  background-color: #293449;
+  font-size: 17px;
+  color: #ffffff;
+  display: flex;
+  min-height: 42px;
 }
 
 .top_section ul
@@ -53,6 +58,84 @@ body
     color: #white-60;
 }
 
+.logo_header
+{
+    box-sizing: border-box;
+    background-color: #ee3643;
+    width: 220px;
+    margin-left: 130px;
+}
+
+.logo_header:hover
+{
+    background-color: #ca2c37;
+}
+
+.logo_header:active
+{
+    background-color: #ba2732
+}
+
+.search_header
+{
+    width: 270px;
+}
+
+.list_header
+{
+    width: 300px;
+}
+
+.list_header ul
+{
+    display: flex;
+}
+
+.list_items_header
+{
+    width: 150px;
+}
+.buy_header
+{
+    width: 150px;   
+    background-color: #63a63e;
+    color: #ffffff;
+}
+
+.buy_header:hover
+{
+    background-color: #5fbb2d;
+}
+
+.buy_header:active
+{
+    opacity: 50%;
+    background-color: #518534;
+}
+
+.info_header
+{
+    display: flex;
+}
+
+.contacts_header
+{
+    box-sizing: border-box;
+    margin-left: 71px;
+    width: 270px;
+}
+
+.login_header
+{
+    box-sizing: border-box;
+    width: 281px;
+    margin-left: 69px;
+}
+
+.navigation_header
+{
+    
+}
 .dop_window:active
 {
     background-color: #161d29;
@@ -73,32 +156,6 @@ body
 .icon1:active
 {
     opacity: 50%;
-}
-
-.button_buy:hover
-{
-    background-color: #5fbb2d;
-}
-
-.button_buy:active
-{
-    opacity: 50%;
-    background-color: #518534;
-}
-
-.logo
-{
-    background-color: #ee3643;
-}
-
-.logo:hover
-{
-    background-color: #ca2c37;
-}
-
-.logo:active
-{
-    background-color: #ba2732
 }
 
 .top_section a
@@ -169,6 +226,20 @@ body
     background-color: #32425c;
     list-style: none;
     text-decoration: none;
+    display: flex;
+    box-sizing: border-box;
+    height: 60px;
+}
+.navigation_header
+{
+    box-sizing: border-box;
+    padding-bottom: 60px;
+    width: 940px;
+    margin-left: 130px;
+}
+.navigation li
+{
+    flex-grow: 1;
 }
 
 .nav_item:hover
@@ -189,9 +260,12 @@ body
 
 .text
 {
+    box-sizing: border-box;
     color: #ee3643;
     font-weight: italic;
     line-height: 23px;
+    width: 196px;
+    margin-left: 183px;
 }
 
 
@@ -474,6 +548,48 @@ body
 }
 
 
+
+.container
+{
+    display: flex;
+    box-sizing: border-box;
+    width: 940px;
+    margin-left: 130px;
+    margin-bottom: 86px;
+    margin-top: 82px;
+}
+
+.about_company
+{
+    width: 519px;
+}
+
+.main_contacts
+{
+    width: 300px;
+    margin-left: 121px;
+}
+
+
+
+.menu_footer
+{
+   display: flex;
+   box-sizing: border-box;
+    height: 68px;
+}
+
+.menu_footer_2
+{
+   display: flex;
+   box-sizing: border-box;  
+   margin-left: 133px;
+   width: 937px;
+    padding-top: 32px;
+    padding-bottom: 53px;
+    height: 125px;
+}
+
 .foot
 {
     background-color: #32425c;
@@ -481,14 +597,23 @@ body
 
 .footer_navigation_1
 {
+    display: flex;
+    box-sizing: border-box;
     font-size: 18px;
     line-height: 24px;
     list-style: none;
+    width: 547px;
+    margin-left: 173px;
 }
 
 .footer_navigation_1 a
 {
     color: #f1f5f7;
+}
+
+.footer_navigation_1 li
+{
+    flex-grow: 1;
 }
 
 .footer_navigation_1 a:hover,
@@ -510,6 +635,16 @@ body
     font-size: 18px;
     line-height: 24px;
     list-style: none;
+    box-sizing: border-box;
+    margin-left: 83px;
+    display: flex;
+    width: 530px;
+    
+}
+
+.footer_navigation_2 li
+{
+    flex-grow: 1;
 }
 
 .footer_navigation_2 a
@@ -522,6 +657,7 @@ body
     color: #f3f7f9;
     font-size: 18px;
     line-height: 24px;
+    width: 330px;
 }
 
 .social_icon
@@ -537,12 +673,21 @@ body
 
 .bottom_section
 {
+    box-sizing: border-box;
     background-color: #293449;
+    display: flex;
+    padding-left: 131px;
+    padding-right: 130px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    width: 1200px;
+    height: 107px;
 }
 
 .copyright
 {
     color: #ffffff;
+    width: 228px;
 }
 
 .dop_info
@@ -552,7 +697,9 @@ body
 
 .social
 {
+    display: flex;
     list-style: none;
+    margin-left: 161px;
 }
 
 .dop_info_link
@@ -568,4 +715,16 @@ body
 .dop_info_link:active
 {
     color: #ee3643;
+}
+
+.info_footer1
+{
+    margin-left: 119px;
+    width: 135px;
+}
+
+.info_footer2
+{
+    width: 96px;
+    margin-left: 53px;
 }
